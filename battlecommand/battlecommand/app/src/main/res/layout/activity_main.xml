@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/main_menu_bg" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:columnCount="6"
+        android:rowCount="6"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" />
+
+
+    <!-- Play Button -->
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:src="@android:drawable/ic_media_play"
+        android:contentDescription="@string/media_play_desc"/>
+    <!-- Settings Button -->
+
+    <!-- Help Button -->
+
+    <ImageButton
+        android:id="@+id/btnSettings"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        android:contentDescription="Settings" />
+
+    <ImageButton
+        android:id="@+id/btnHelp"
+        android:layout_width="104dp"
+        android:layout_height="97dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="31dp"
+        android:background="@null"
+        android:contentDescription="Help" />
+
+
+</RelativeLayout>
